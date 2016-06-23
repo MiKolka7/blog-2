@@ -1,0 +1,116 @@
+.movie-info {
+	
+
+	.movie-info__screenshot {
+		background-image: url(../img/screenshot.png);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 452px;
+		background-repeat: no-repeat;
+		position: relative;
+
+		.movie-info__screenshot__elements {
+			line-height: 100px;
+			padding-top: 156px;
+
+			.movie-info__screenshot__element-1 {
+				@extend .box;				
+				float: left;
+				i {	
+					@extend .chevron;					
+				}
+			}
+			
+			.movie-info__screenshot__element-2 {
+				display: block;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				border: 3px solid white;
+				position: absolute;
+				right: 48%;
+				left: 48%;
+				i {
+					font-size: 40px;
+					color: $white;
+					margin-top: 30px;
+					margin-left: 40px;
+				}
+			}
+
+			.movie-info__screenshot__element-3 {
+				@extend .box;	
+				float: right;
+				i {	
+					@extend .chevron;					
+				}
+
+			}
+			
+		}
+		
+	}
+
+	.movie-info__meta {
+		
+		.movie-info__meta__poster {
+			max-width: 470px;
+			max-height: 470px;
+			margin-top: -80px;
+			position: relative;
+			z-index: 9999;	
+			float: left;	
+		}
+		.movie-info__meta__description {
+			width: 310px / 1170px * 100%;
+			margin-left: 60px;
+			float: left;
+			h2 {
+				font-family: $lato;
+				font-size: 22px;
+				color: $secondary-color;
+				font-weight: 700;
+				font-style: italic;
+			}
+			p {
+				@extend .small-text-676767;
+			}
+		}
+		.movie-info__meta__button {
+			width: 310px / 1170px * 100%;
+			margin-left: 60px;
+			float: right;
+			@extend .clearfix;
+
+			.movie-info__meta__button--secondary {}
+			.movie-info__meta__button--complimentary {}
+		}
+		
+		.movie-info__meta__price-tags {
+			width: 700px / 1170px * 100%;
+			margin-left: 60px;
+
+		}
+		.movie-info__meta__text-primary {}
+		.movie-info__meta__price-complimentary {}
+		.movie-info__meta__stars {}
+		.movie-info__meta__synopsis {}
+		.text-primary {}
+		.long-text {}
+		.movie-info__review {}
+		.movie-info__review__rate__text-primary {}
+		.movie-info__review__rate {}
+		.movie-info__review__rate__avatar {}
+		.movie-info__review__rate__text-name {}
+		.movie-info__review__rate__stars {}
+		.movie-info__review__rate__text {}
+		.movie-info__cast {}
+		.movie-info__cast__avatar {}
+		.movie-info__cast__text-name {}
+	}
+
+}
+
+
