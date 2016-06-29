@@ -1,3 +1,39 @@
 $primary-color: #099;
 
 $base-font: 'Lato';
+
+$primary-color: #25254e;      /* blue */
+$secondary-color: #ffa820;    /* yellow */
+$contrast-color-1: #03bb4d;   /* green*/
+$white: white;                /* white*/
+$complimentary: cccccc;       /* grey*/
+$small-text-color: #676767;
+$fa-font-path: "../../fonts/FontAwesome.otf";
+$lato: 'Lato', sans-serif;
+
+
+
+.box {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: $secondary-color;
+	opacity: 0.5;
+	position: relative;
+	margin-top: 30px;
+}
+
+.chevron {
+	font-size: 20px;
+	color: $primary-color;
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 18px;	
+}
+
+.small-text-676767 {
+	font-family: $lato;
+	font-size: 10px;
+	color: $small-text-color;
+	font-weight: 400;
+}

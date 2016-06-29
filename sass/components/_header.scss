@@ -1,0 +1,54 @@
+.header {
+	background-color: $primary-color;
+
+	.container {
+		.navbar {
+
+			.header_logo {
+				max-width: 150px;
+				max-height: 150px;
+				float: left;
+
+			}
+			.menu {
+				float: right;
+				max-width: 1020px /  1170px * 100%;
+				text-align: right;
+				a {
+					line-height: 150px;
+					text-decoration: none;
+					border-top: 3px solid transparent;
+					margin-left: 39px;
+					padding-top: 62px; 
+					padding-bottom: 63px; 
+						&:hover {
+						border-top: 3px solid $secondary-color;
+						padding-top: 62px; 
+						color: $secondary-color;
+						}
+					i {
+						background-color: $secondary-color;
+						padding: 22px;
+						color: $primary-color;
+						&:hover {
+							border-radius: 50%;
+							-webkit-animation: fa-spin 5s infinite;
+							animation: fa-spin 5s infinite;
+							color: $white;							 
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
