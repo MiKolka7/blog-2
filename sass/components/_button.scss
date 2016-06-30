@@ -35,15 +35,17 @@ $height: 44px;
   &-link {
   	@extend .btn-icon;
   	background: transparent;
-  	border-color: #eee;
+  	border-color: #ccc;
+    color: #ccc;
   	
   	&-active {
   		background: rgb(245, 168, 32);
   		border-color: rgb(245, 168, 32);
+      color: #000;
   	}
 
   	&:hover {
-  		border-color: rgb(245, 168, 32);	
+  		border-color: rgb(245, 168, 32);
   	}
   } 
 
@@ -52,7 +54,13 @@ $height: 44px;
   	padding: 0 10px;
   	color: #fff;
   	line-height: $height / 1.5;
-  	border: 0
+  	border: 0;
+    
+    &-active {
+      @extend .btn-mini;
+      background-color: #ffa820;
+      max-width: 5%;
+    }
   }
 
   &-green {
