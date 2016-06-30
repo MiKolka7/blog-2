@@ -13,3 +13,9 @@
 	float: left;
 	display: block;
 }
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: table;
+	overflow: hidden;
+}
